@@ -1,0 +1,336 @@
+html{
+  scroll-behavior: smooth;
+ }
+  body{
+  overflow-x: hidden; 
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+ 
+ } 
+
+.firstBack-img {
+   background-image: url(../assets/UberPics/Uber1.png); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh; 
+  margin: 0;
+ 
+}
+
+.img-toggle{
+  width: 15px;
+  height: 40px;
+  background-color: transparent;
+  background: none;
+}
+
+#log-main{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.log-space {
+  align-self: flex-start;
+  flex: 1 1 auto;
+  align-self: center;
+  align-content: center;
+  height: 100%;
+}
+
+.sign-space {
+  flex-grow: 0;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+.space-log {
+  margin-right: 5px;
+}
+
+
+.log-div{
+  margin-left:auto;
+}
+
+.uber-Eat {
+  width: 90px;
+  height: 20px;
+  padding: 15px;
+  
+ 
+}
+
+.face-icon {
+ display: none;
+  width: 34px; 
+   font-size: 14px; 
+   height: 35px;
+    background: white; 
+    border-radius: 30px; 
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+   
+  }
+  
+
+.background-color-face-icon {
+  font-size: 14px;
+  width: 16px;
+  height: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  white-space: nowrap;
+}
+
+.log-in{
+  border-radius:15px; 
+   height: 36px; 
+  width: 36px; 
+  padding: 8px;
+  text-decoration: none;
+  color:black;
+  background-color: white;
+  font-size: 14px; 
+  
+}
+
+.log-in,.face-icon:hover{
+  color:black;
+  background-color: rgb(245, 240, 240);
+  
+}
+
+.sign-up{
+  border-radius:15px;
+  padding: 8px;
+  text-decoration: none;
+  color:white;
+  background-color:black;
+  font-size: 14px;
+  
+}
+
+.sign-up:hover{
+  color: white;
+  background-color: rgb(51, 50, 50);
+}
+
+#main-div {
+  margin-left: 50px;
+  margin-top: 8%;
+  align-items: center;
+  justify-content: center;
+}
+
+#input-div{
+  display: flex;
+  
+}
+
+.order h1{
+  font-size: 50px;
+  
+} 
+
+ .input-1,.input-2,.share-a{
+  box-sizing: border-box;
+  padding: 17px 29px; 
+  font-size: 16px;
+  border: none; 
+}  
+
+.input-1 {
+  width: 40%;
+  padding-left: 40px;
+  box-sizing: border-box;
+
+}
+
+
+.location-icon {
+  position: absolute;
+  margin-left: 15px; 
+  z-index: 1px; 
+  width: 16px; 
+  height: 50px; 
+}
+.clock-icon {
+  position: absolute;
+  margin-left: 15px; 
+  width: 16px; 
+  height: 50px; 
+  z-index: 1;
+}
+
+
+.input-1:focus{
+  outline: none;
+  box-shadow: 0 1px 0 0 rgb(2, 71, 219);
+  
+}
+
+.space-span {
+  width: 10px;
+  display: block;
+}
+
+
+.input-2{
+  box-sizing: border-box;
+  padding: 16px 0 17px 0;
+  width: 200px; 
+  padding-left: 40px;
+  text-decoration: none; 
+   
+}
+
+.share-a {
+  border-radius:10px;
+  padding: 17px 19px;
+  text-decoration: none;
+  color:white;
+  background-color:black;
+  font-size: 18px;
+} 
+.share-a:hover{
+  color: white;
+  background-color: rgb(51, 50, 50);
+}
+
+
+.sign {
+  text-decoration: none;
+  color: black;
+  
+}
+.or-div{
+  padding:10px;
+}
+
+
+.cunty-sect {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+ }
+ 
+ .cunty-1 {
+   color: black;
+   font-weight: 700;
+   font-size: 27px;
+   margin-left: 17px;
+   
+ }
+ 
+ .view-1 {
+   color: #000;
+   margin-right: 18px;
+   font-weight: 700;
+   margin-top: 7px;
+   font-size: 20px;
+ }
+ 
+ 
+ .county-grid{
+   display: grid;
+   grid-template-columns:repeat(4,1fr);
+   grid-template-rows:repeat(8,1fr);
+   gap:26px ;
+   grid-auto-flow: column;
+   margin: 24px;
+
+ }
+ 
+ .county-1{
+   text-decoration: none;
+   color: #000;
+   font-size: 16px;
+   font-weight: 200;
+  
+ }
+ 
+ @media (max-width: 784px ){
+  .cunty-sect{
+    flex-direction: column;
+  }
+
+   .county-grid {
+     grid-template-columns: repeat(2, 1fr);
+     grid-template-rows:repeat(15,1fr) ;
+     gap: 24px 8px;
+    margin: 0;
+   }
+   .city {
+    margin: 0 16px;
+   }
+   .view-1{
+    transform: translate(0,40rem);
+    font-size: medium;
+  }
+
+  .cunty-1{
+    margin: 0;
+    font-size: 20px;
+   }
+
+ }
+
+
+
+@media (max-width: 784px){
+#input-div{
+  flex-direction: column;
+ margin: 5px;
+ 
+}
+.order h1{
+  font-size: 50px;
+  margin-top: 40px;
+  flex-direction: column;
+  
+} 
+.input-1 {
+  box-sizing: border-box;
+  width: 75%;
+  margin-bottom: 8px;
+  
+}
+ .input-2 {
+  width: 75%;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+ 
+ }
+
+ .share-a {
+  width: 75%;
+  text-align: center;
+  box-sizing: border-box;
+ }
+
+ .log-in {
+  display: none;
+ }
+
+.face-icon {
+ display: flex;
+
+
+}
+.firstBack-img{
+  background-image: url(../Assets/img/MobileUberEat.webp);
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+}
+
+

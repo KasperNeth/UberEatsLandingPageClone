@@ -1,0 +1,75 @@
+.hidden-image-flex,.android-main{
+  display: none;
+}
+@media (max-width:784px) {
+.hidden-image-flex {
+  display:flex;
+}
+.hidden-space {
+  width: 16px;
+  height: 1;
+}
+
+.space-header {
+  height: 42px;
+}
+
+.android-space {
+  width: 8px;
+}
+
+.hidden-image {
+  width: 64px;
+  height: 64px;
+  border-radius:15px ;
+
+}
+
+
+.image-center {
+  margin-bottom: 16px;
+  align-items: center;
+}
+
+.paragraph-text {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.android-main {
+  display: flex;
+  background: #f3f3f3;
+  padding:5px 16px ;
+  border-radius: 8px;
+  color: black;
+  font-size: 14px;
+  /* width: 100%; */
+   text-decoration: none; 
+   justify-content: center;
+  align-items: center; 
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.android-logo {
+  width: 18px;
+  height: 18px;
+  flex: none;
+  
+}
+.android-icon {
+  font-size: 18px;
+  font-weight: 700;
+  
+}
+
+  .a{
+  text-decoration: none;
+} 
+  
+.margin-width {
+  margin: 0 16px;
+}
+
+}

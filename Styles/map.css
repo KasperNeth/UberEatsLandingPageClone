@@ -1,0 +1,73 @@
+.map-sect {
+ display: flex;
+ justify-content: space-between;
+ margin-top: 6rem;
+}
+
+.cities {
+  color: black;
+  font-weight: 700;
+  font-size: 35px;
+  margin-left: 17px;
+}
+
+.view {
+  display: flex;
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: 18px;
+  font-weight: 50px;
+  margin-top: 7px;
+  align-items: center;
+  white-space: nowrap;
+  
+ 
+}
+
+.google {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin:2%;
+ height:300px ;
+ width: 95%; 
+       
+}
+
+.city-grid{
+  display: grid;
+  grid-template-columns:repeat(4,1fr);
+  grid-template-rows:repeat(6,1fr);
+  gap:26px ;
+  grid-auto-flow: column;
+  margin: 24px;
+}
+
+.city-1{
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  font-weight: 200;
+ 
+}
+
+@media (max-width: 784px ){
+.map-sect{
+  flex-direction: column;
+}
+  .city-grid {
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows:repeat(12,1fr) ;
+    gap: 16px 8px;
+    margin: 0;
+  }
+  .view{
+    transform: translate(0,23rem);
+    font-size: 15px;
+  }
+  .cities,.google {
+    margin: 0;
+    width: 100%;
+  }
+}
